@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>INGRESO</title>
+</head>
+<body>
+	<h1>INGRESO DE ALUMNO NUEVO</h1>
+	
+	<div class = "Plantilla">
+		<form th:action="/@{ingresar}" method="post" >
+			<div class = form>
+				<label for ="name">Nombres:</label>
+				<input id="name" type="text" name="name" >
+			</div>
+			
+			<div class = form>
+				<label for="lastName">Apellidos:</label>
+				<input id="lastName" type="text" name="lastName" >
+			</div>
+			
+			<div class = form>
+				<label for="birthday">Fecha de nacimiento:</label>
+				<input id="birthday" type="text" name="birthday">
+			</div>
+			
+			<div class = form>
+				<label for="place">Lugar de Nacimiento:</label>
+				<input id="place" type="text" name="place" >
+			</div>
+			
+			<div class = form>
+				<label for="school">Instituto/Colegio de procedencia: </label>
+				<input id="school" type="text" name="school" >
+			</div>
+			
+			<div class = form>
+				<label for="phone">Telefono fijo:</label>
+				<input id="phone" type="text" name="phone" >
+			</div>
+			
+			<div class = form>
+				<label for="cellPhone">Telefono Movil:</label>
+				<input id="cellPhone" type="text" name="cellPhone">
+			</div>
+		
+		</form>
+	</div>
+</body>
+</html>
