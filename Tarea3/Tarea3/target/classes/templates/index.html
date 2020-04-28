@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>INGRESO</title>
+	</head>
+	<body>
+		<h1>INGRESO DE ALUMNO NUEVO</h1>
+		<div>
+			<p>****  formulario  ****</p>
+			<form method="post" th:action="@/{ingresar}">
+				<div>
+				<label for="name">nombre:</label>
+				<input id="name" type="text" name="name" maxlength="25" minlength="1">
+				</div>
+				
+				<div>
+				<label for="lastName">Apellido:</label>
+				<input id="lastName" type="text" name="lastName" maxlength="25" minlength="1">
+				</div>
+				
+				<div>
+				<label for="BDay">Fecha de Nacimiento:</label>
+				<input id="BDay" type="text" name="BDay">
+				</div>
+				
+				<div>
+				<label for="place">Lugar de Nacimiento:</label>
+				<input id="place" type="text" name="place" maxlength="25" minlength="1">
+				</div>
+				
+				<div>
+				<label for="school">Colegio:</label>
+				<input id="school" type="text" name="school" maxlength="100" minlength="1">
+				</div>
+				
+				<div>
+				<label for="phone">Telefono fijo: </label>
+				<input id="phone" type="number" name="phone" maxlength="8" minlength="8">
+				</div>
+				
+				<div>
+				<label for="cellphone">Telefono celular:</label>
+				<input id="cellphone" type="number" name="cellphone" maxlength="8" minlength="8">
+				</div>
+				
+			</form>
+		</div>
+	</body>
+</html>
